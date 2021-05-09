@@ -271,9 +271,23 @@ button {
      float: right;
 }
 
+.navigation {
+     display: flex;
+     flex-direction: row;
+     justify-content: baseline;
+     vertical-align: middle;
+     /* align-items: center; */
+}
+
+.navigation.navbar-dark {
+     display: flex !important;
+     flex-direction: row;
+     vertical-align: middle;
+}
+
 .navigation.navbar-dark .navbar-nav .nav-link {
      padding: 0 25px;
-     color: #fff;
+     color: #271706;
      font-size: 16px;
      line-height: 20px;
 }
@@ -300,7 +314,7 @@ button {
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
 
 .header {
-     background: #271705;
+     background: #ffffff;
      width: 100%;
      position: fixed;
 	 top:0;
@@ -317,11 +331,22 @@ button {
      line-height: 40px;
 }
 
+.frikanomicsLogoBlock {
+     display: block;
+     align-items: center;
+     max-width: 30vw;
+     margin: auto;
+}
+
+.frikanomicsLogo{
+     width: 30vw;
+     margin: 5rem 0 0;
+}
+
 .banner_main {
      background: #271705;
      background-size: 100% 100%;
      background-repeat: no-repeat;
-     padding-bottom: 90px;
 }
 
 .text-bg h1 {
@@ -666,7 +691,33 @@ button {
 
 .footer {
      font-family: Poppins;
-     background: #271705;
+     background: #ffffff;
+     margin: auto;
+     width: 100%;
+     text-align: center;
+}
+
+.footer p{
+     font-weight: medium;
+     font-size: 1rem;
+     padding: 2rem 0 0 0;
+}
+
+.socialMediaBlockFooter{
+     display: flex;
+     flex-direction: row;
+     width: 20vw;
+     margin: auto;
+}
+
+.socialMediaBlockFooter button {
+     background: none;
+     border: none;
+     margin: 1rem;
+}
+
+.socialMediaBlockFooter button a img{
+     width: 2rem;
 }
 
 .cont {
@@ -719,18 +770,18 @@ button {
      color: #0c0f38;
 }
 
-
 /** end footer **/
 
 /* Simon style */
 
 .socialMedia {
-     margin-bottom: 2rem;
+     margin-bottom: 2rem; 
 }
 
 .socialMedia button a img {
      width: 2rem;
      height: 2rem;
+     margin: auto ;
 }
 
 .socialMedia button {
@@ -746,6 +797,169 @@ button {
      height: 3rem;
 }
 
+/* .frikonomics {
+     max-width: 50vw;
+     margin: auto;
+     text-align: center;
+} */
+
 .container div div p .DonSimon {
      color: #FF9E14;
+}
+
+.linkSocialBlock {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     vertical-align: middle;
+}
+
+/* Styling text title  */
+.subtitle {
+     color: #FF9E14;
+     font-weight: bold;
+     font-size: 2rem;
+     margin: 5rem 0 0 0;
+}
+
+.normalText {
+     color: #ffffff;
+     font-weight: lighter;
+     font-size: 1rem;
+}
+
+/* Intro */
+
+.buyButton {
+     background-color: #FF9E14;
+     padding: 1rem;
+     border-radius: 15px;
+     color: #ffffff;
+     font-weight: normal;
+     font-size: 1rem;
+     margin: 2rem 0 0;
+}
+
+/* Frikonomics */
+
+.frikanomicsblock {
+     max-width: 50vw;
+     margin: auto;
+     text-align: center;
+}
+
+.frikanomicsLogoOrangeBlock {
+     display: flex;
+     flex-direction: row;
+     justify-content: baseline;
+}
+
+.frikanomicsLogoOrange {
+     margin: 0 1rem 1rem;
+}
+
+.frikanomicsLogoOrange:nth-last-of-type(1) {
+     width: 2rem;
+     height: 2rem;
+
+}
+
+.frikanomicsLogoOrange:nth-last-of-type(2) {
+     width: 4rem;
+     height: 4rem;
+
+}
+
+.frikanomicsLogoOrange:nth-last-of-type(3) {
+     width: 6rem;
+     height: 6rem;
+
+}
+
+/* Infoblock  */
+
+.infoBlockFrik {
+     max-width: 50vw;
+     margin: 5rem auto;
+     text-align: center;
+}
+
+.infoBlockTitle {
+     color: #FF9E14;
+     font-weight: bold;
+     font-size: 1.5rem;
+}
+
+.infoBlockText {
+     color: #ffffff;
+     font-weight: normal;
+     font-size: 1rem;
+}
+
+.infoBlockAmount {
+     color:#FF9E14;
+     font-weight: bold;
+     font-size: 1.5rem;
+     border: 1px solid #FF9E14;
+     border-radius: 15px;
+     padding: 1rem;
+     max-width: 30vw;
+     margin: 1rem auto;
+}
+
+/* Roadmap  */
+#Roadmap {
+     background-color: #ffffff;
+     max-width: 100vw;
+     margin: auto;
+     text-align: center;
+     padding: 5rem 0 5rem 0
+}
+
+.roadmapImage {
+     width: 50vw;
+}
+
+/* Textblokken */
+
+.textBlock {
+     margin: 5rem 0;
+     align-items: flex-start;
+     text-align: start;
+}
+
+.textBlockTitle {
+     font-weight: bold;
+     color: #ffffff;
+     font-size: 1.5rem;
+}
+
+.textBlockText {
+     font-weight: bold;
+     color: #FF9E14;
+     font-size: 1rem;
+
+}
+
+/* MEDIA QUERIES */
+/* Telefoon */
+@media screen and (max-width: 600px) {
+     .infoBlockAmount {
+          font-size: 1rem;
+          max-width: 100vw;
+     }
+}
+
+/* Tablet */
+@media screen and (max-width: 800px) {
+     body {
+          background-color: #FF9E14;
+     }
+}
+
+/* Desktop */
+@media screen and (max-width: 1000px) {
+     body {
+          background-color: #FF9E14;
+     }
 }

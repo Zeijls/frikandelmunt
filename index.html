@@ -56,11 +56,13 @@
                   <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                      <nav class="navigation navbar navbar-expand-md navbar-dark ">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                           <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <!-- Navigatie links -->
+                        <div class="linkSocialBlock"> 
+                        <!-- <div class="collapse navbar-collapse" id="navbarsExample04"> -->
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
+                              <li class="nav-item">
                                  <a class="nav-link" href="#Frikanomics">$Frikanomics</a>
                               </li>
                               <li class="nav-item">
@@ -68,29 +70,33 @@
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="#HoeTeKopen">Hoe te kopen</a>
+                              </li>
                            </ul>
-                           <!--<button> Name Convention location and sizing buttons on header Simonella explain
-                              <a href="https://www.instagram.com/frikandelmunt/" class="instagram">
-                                 <img src="./images/instaWhit.png">
+                        <!-- </div> -->
+                        </div>
+                        
+                        <!-- Social Media Links -->
+                        <div class="socialMedia"> 
+                           <button>
+                           <a href="https://www.instagram.com/frikandelmunt/" class="instagram">
+                              <img src="./images/InstaBrown.png">
+                           </a>
+                           </button>
+                           <button>
+                              <a href="https://twitter.com/Frikandelmunt" class="twitter">
+                                 <img src="./images/TwitterBrown.png">
                               </a>
-                              </button>
-                              <button>
-                                 <a href="https://twitter.com/Frikandelmunt" class="twitter">
-                                    <img src="./images/twitterWhit.png">
-                                 </a>
-                              </button>
-   
-                              <button>
-                                 <a href="https://www.tiktok.com/@frikandelmunt?lang=nl-NL" class="tiktok">
-                                    <img src="./images/tiktokWhit.png">
-                                 </a>
-                              </button>
-   
-                              <button>
-                                 <a href="https://telegram.com/" class="telegram">
-                                    <img src="./images/TeleWhit.png">
-                                 </a>
-                              </button> -->
+                           </button>
+                           <button>
+                              <a href="https://www.tiktok.com/@frikandelmunt?lang=nl-NL" class="tiktok">
+                                 <img src="./images/TiktokBrown.png">
+                              </a>
+                           </button>
+                           <button>
+                              <a href="https://telegram.com/" class="telegram">
+                                 <img src="./images/TeleBrown.png">
+                              </a>
+                           </button>
                         </div>
                      </nav>
                   </div>
@@ -98,101 +104,132 @@
             </div>
          </div>
       </header>
-      <!-- end header inner -->
-      <!-- end header -->
-      <!-- banner --> <!--Name Convention banner Simonella explain-->
+      
+      <!-- intro -->
       <section id="Frikanomics" class="banner_main">
-         <div class="container">
-            <figure><img src="images/LogoBlackBG.png" /></figure>
-            <div class="row">
-               <div class="col-md-10">
-                  <div class="text-bg">
-                     <span>Maak het speciaal met Frikandel</span>    
-                     <p>De eerste Nederlandse meme-token met de beste Frikanomics</p>
-                     <p>Koop nu op PancakeSwap V2</p>  
-               <div class="col-md-7">
-                  <div class="text-img"> 
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- end banner -->
-      <!-- Frikanomics object -->
-      <div id="Frikanomics" class="banner_main"> <!--Name Convention classes Simonella explain-->
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="text-bg">
-                  <span>Frikanomics</span>    
-                     <p>Frikandel is gemaakt om holders te belonen en tegelijk liquiditeit en waarde te vehogen. Dit gebeurd door een belansting van 10% op elke transactie.</p> 
-                     <span>Hoeveelheid Frikandellen</span> 
-                     <p>1.000.000.000.000</p> 
-                     <span>10% Belasting op transacties</span> 
-                     <p>5% uitgekeerd aan de hodlers</p> 
-                     <p>5% toegevoegd aan liquidity</p> 
-                     <span>Bescherming tegen reuze snackers</span> 
-                     <p>Eerlijk zullen we alles delen</p> 
-                     <p>Maximaal 50.000.000.000 $FRIK per transactie</p>
-                  </div>      
-               </div>
+         <div class="frikonomics container">
+            <div class="frikanomicsLogoBlock">
+               <div class=""></div>
+               <img src="images/LogoBlackBG.png" class="frikanomicsLogo"/>
             </div>
             
+            <div class="frikanomicsblock">
+               <h2 class="subtitle">Maak het speciaal met Frikandel</h2>    
+               <p class="normalText">De eerste Nederlandse meme-token met de beste Frikanomics</p>
+               <button class="buyButton">Koop nu op PancakeSwap V2</button>  
+            </div>
+      </section>
+
+      <!-- Frikanomics block -->
+      <section id="Frikanomics" class="banner_main"> <!--Name Convention classes Simonella explain-->
+         <div class="frikonomics container">
+                     <div class="frikanomicsblock">
+                        <div class="frikanomicsLogoOrangeBlock">
+                           <img class="frikanomicsLogoOrange" src="./images/CoinSymbol.png">
+                           <img class="frikanomicsLogoOrange" src="./images/CoinSymbol.png">
+                           <img class="frikanomicsLogoOrange" src="./images/CoinSymbol.png">
+                        </div>
+
+                        <h2 class="subtitle">Frikanomics</h2>    
+                        <p class="normalText">Frikandel is gemaakt om holders te belonen en tegelijk liquiditeit en waarde te vehogen. Dit gebeurd door een belansting van 10% op elke transactie.</p>
+                        <!-- Hoeveelheid frikandellen -->
+                        <div class="infoBlockFrik">
+                           <h3 class="infoBlockTitle">Hoeveelheid Frikandellen</h3>
+                           <p class="infoBlockText">Genoeg frikandellen voor iedereen</p>
+                           <p class="infoBlockAmount">1.000.000.000.000</p>
+                        </div>
+                        <!-- 10% belasting op transacties -->
+                        <div class="infoBlockFrik">
+                           <h3 class="infoBlockTitle">10% Belasting op transacties</h3>
+                           <p class="infoBlockText">Verdien frikandellen met je frikandellen</p>
+                           <p class="infoBlockAmount">5% uitgekeerd aan de hodlers</p>
+                           <p class="infoBlockAmount">5% toegevoegd aan liquidity</p>
+                        </div>
+                        <!-- Bescherming tegen reuze snackers -->
+                        <div class="infoBlockFrik">
+                           <h3 class="infoBlockTitle">Bescherming tegen reuze snackers</h3>
+                           <p class="infoBlockText">Eerlijk zullen we alles delen</p>
+                           <p class="infoBlockAmount">Maximaal 50.000.000.000 $FRIK per transactie</p>
+                        </div>
+                     </div>
+               </div>
+            </div>
          </div>
       </div>
-      <!-- end Frikanomics -->
+
       <!-- Roadmap  -->
-      <div id="Roadmap" class="hosting"> <!--Name Convention classes Simonella explain-->
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
+      <section id="Roadmap" class="hosting"> 
+            <img class="roadmapImage" src="./images/RoadmapDutch.png">
+      </section>
+
+      <!-- Hoetekopen -->
+      <section id="Frikanomics" class="banner_main">
+         <div class="frikonomics container">
+            
+            <div class="frikanomicsblock">
+               <h2 class="subtitle">Hoe koop je $FRIK?</h2>
+               
+               <div class="textBlock">
+                  <h3 class="textBlockTitle">1. Download Metamask of gebruik een bestaande wallet</h3>
+                  <p class="textBlockText">Ga naar metamask.io en download de wallet voor je smartphone of chrome / firefox. Vergeet geen BNB naar je wallet te sturen!</p>
+               </div>
+
+               <div class="textBlock">
+                  <h3 class="textBlockTitle">1. Download Metamask of gebruik een bestaande wallet</h3>
+                  <p class="textBlockText">Ga naar metamask.io en download de wallet voor je smartphone of chrome / firefox. Vergeet geen BNB naar je wallet te sturen!</p>
+               </div>
+
+               <div class="textBlock">
+                  <h3 class="textBlockTitle">1. Download Metamask of gebruik een bestaande wallet</h3>
+                  <p class="textBlockText">Ga naar metamask.io en download de wallet voor je smartphone of chrome / firefox. Vergeet geen BNB naar je wallet te sturen!</p>
+               </div>
+
+               <div class="textBlock">
+                  <h3 class="textBlockTitle">1. Download Metamask of gebruik een bestaande wallet</h3>
+                  <p class="textBlockText">Ga naar metamask.io en download de wallet voor je smartphone of chrome / firefox. Vergeet geen BNB naar je wallet te sturen!</p>
+               </div>
+
+               <div class="textBlock">
+                  <h3 class="textBlockTitle">1. Download Metamask of gebruik een bestaande wallet</h3>
+                  <p class="textBlockText">Ga naar metamask.io en download de wallet voor je smartphone of chrome / firefox. Vergeet geen BNB naar je wallet te sturen!</p>
                </div>
             </div>
-            <i><img src="images/RoadmapDutch.png" /></i>
-            </div>
-         </div>
-      <!-- end Roadmap -->
-      <!-- HoeTeKopen -->
-      <div id="HoeTeKopen" class="banner_main"> <!--Name Convention classes Simonella explain-->
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <div class="text-bg">
-                     <span>Hoe koop je $FRIK?</span> <br> <br>
-                     <span>1. Download Metamask of gebruik een bestaande wallet</span>
-                     <p>Ga naar metamask.io en download de wallet voor je smartphone of chrome / firefox. Vergeet geen BNB naar je wallet te sturen!</p>
-                     <span>2. Surf naar pancakeswap.finance</span>
-                     <p>Ga via de browser van metamask naar pancakeswap.finance.</p>
-                     <span>3. Navigeer naar het trade scherm</span>
-                     <p>Klik op "connect" rechtsboven in het scherm om de metamask wallet te koppelen. Ga vervolgens via de zijbalk naar "trade" en klik op "exchange"</p>
-                     <span>4. Selecteer $FRIK</span>
-                     <p>Klik op "Select a currency" knop en vul hier het contractadres in:
-                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                     </p>
-                     <span>5. Verander de "slippage" naar 12%</span>
-                     <p>Klik op "settings" rechtsboven en verander de "slipage" naar 12%</p>
-                     <span>6. Swappen maar</span>
-                     <p>Vul het aantal $FRIK in dat je wilt hebben en swappen maar</p>
-                  </div>
-               </div>
-            </div>
-            </div>
-            </div>
-         </div>
-      <!-- end HoeTeKopen -->
+      </section>
+
       <!--  footer -->
       <footer>
          <div class="footer">
-            <div class="copyright">
+            <!-- <div class="copyright">
                <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
+                  <div class="row"> -->
+                     <!-- <div class="col-md-12"> -->
                         <p>$Frikandelmunt</p> 
-                     </div>
+                        <div class="socialMediaBlockFooter"> 
+                           <button>
+                           <a href="https://www.instagram.com/frikandelmunt/" class="instagram">
+                              <img src="./images/InstaBrown.png">
+                           </a>
+                           </button>
+                           <button>
+                              <a href="https://twitter.com/Frikandelmunt" class="twitter">
+                                 <img src="./images/TwitterBrown.png">
+                              </a>
+                           </button>
+                           <button>
+                              <a href="https://www.tiktok.com/@frikandelmunt?lang=nl-NL" class="tiktok">
+                                 <img src="./images/TiktokBrown.png">
+                              </a>
+                           </button>
+                           <button>
+                              <a href="https://telegram.com/" class="telegram">
+                                 <img src="./images/TeleBrown.png">
+                              </a>
+                           </button>
+                        </div>
+                     <!-- </div>
                   </div>
                </div>
-            </div>
+            </div> -->
          </div>
     
       </footer>

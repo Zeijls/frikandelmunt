@@ -1,34 +1,9 @@
-
-
-/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
-
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
-/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
- 2) font-family: 'Poppins', sans-serif;
- ----------------------------------------*****/
-
-
-/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
-
-@import url(animate.min.css);
-@import url(normalize.css);
-@import url(meanmenu.css);
-@import url(owl.carousel.min.css);
-@import url(slick.css);
-@import url(jquery-ui.css);
-@import url(nice-select.css);
-
-
-
-/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
-
 * {
-     box-sizing: border-box !important;	 
+     box-sizing: border-box !important;	
+     margin: 0; 
 }
 
 html {
@@ -36,12 +11,7 @@ html {
 }
 
 body {
-     color: #666666;
-     font-size: 14px;
-     font-family: 'Roboto', sans-serif;
-     line-height: 1.80857;
-     font-weight: normal;
-     margin: 4rem 0 0 0;
+     font-family: 'Arial', arial-bold-MS;
       width: 100vw; 
 }
 
@@ -56,65 +26,7 @@ a {
      transition: all .3s ease-in-out;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-     letter-spacing: 0;
-     font-weight: normal;
-     position: relative;
-     padding: 0 0 10px 0;
-     font-weight: normal;
-     line-height: normal;
-     color: #111111;
-     margin: 0
-}
-
-h1 {
-     font-size: 24px
-}
-
-h2 {
-     font-size: 22px
-}
-
-h3 {
-     font-size: 18px
-}
-
-h4 {
-     font-size: 16px
-}
-
-h5 {
-     font-size: 14px
-}
-
-h6 {
-     font-size: 13px
-}
-
-*,
-*::after,
-*::before {
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-     color: #212121;
-     text-decoration: none!important;
-     opacity: 1
-}
-
+/* ALGEMENE STYLING */
 button:focus {
      outline: none;
 }
@@ -140,8 +52,7 @@ a {
      outline: none !important;
 }
 
-a,
-.btn {
+a {
      text-decoration: none !important;
      outline: none !important;
      -webkit-transition: all .3s ease-in-out;
@@ -156,42 +67,8 @@ img {
      height: auto;
 }
 
- :focus {
+:focus {
      outline: 0;
-}
-
-.btn-custom {
-     margin-top: 20px;
-     background-color: transparent !important;
-     border: 2px solid #ddd;
-     padding: 12px 40px;
-     font-size: 16px;
-}
-
-.lead {
-     font-size: 18px;
-     line-height: 30px;
-     color: #767676;
-     margin: 0;
-     padding: 0;
-}
-
-.form-control:focus {
-     border-color: #ffffff !important;
-     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
-}
-
-.navbar-form input {
-     border: none !important;
-}
-
-.badge {
-     font-weight: 500;
-}
-
-blockquote {
-     margin: 20px 0 20px;
-     padding: 30px;
 }
 
 button {
@@ -206,41 +83,7 @@ button {
      width: 100%;
 }
 
-.layout_padding {
-     padding-top: 90px;
-     padding-bottom: 90px;
-}
-
-.layout_padding_2 {
-     padding-top: 75px;
-     padding-bottom: 75px;
-}
-
-.light_silver {
-     background: #f9f9f9;
-}
-
-.theme_bg {
-     background: #38c8a8;
-}
-
-.margin_top_30 {
-     margin-top: 30px !important;
-}
-
-.full {
-     width: 100%;
-     float: left;
-     margin: 0;
-     padding: 0;
-}
-
-
-/**-- heading section --**/
-
-
-/*---------------------------- preloader area ----------------------------*/
-
+/* LOADING STATE */
 .loader_bg {
      position: fixed;
      z-index: 9999999;
@@ -265,8 +108,7 @@ button {
 }
 
 
-/*-- navigation--*/
-
+/* NAVIGATIE */
 .navigation.navbar {
      float: right;
 }
@@ -285,7 +127,6 @@ button {
      justify-content: space-between;
 }
 
-
 .navigation.navbar-dark {
      display: flex !important;
      flex-direction: row;
@@ -293,10 +134,10 @@ button {
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
-     padding: 0 25px;
+     padding: 1rem 1rem 1rem 1rem;
      color: #271706;
-     font-size: 16px;
-     line-height: 20px;
+     font-size: 1rem;
+     line-height: 1rem;
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
@@ -311,37 +152,61 @@ button {
      color: #FF9E14;
 }
 
+.socialMedia button a img {
+     width: 1.5rem;
+     height: 1.5rem;
+     margin: auto ;
+}
 
-/*-- header area --*/
+.socialMedia button {
+     padding-right: 1rem;
+     background: none;
+}
 
+.nav-item {
+	 margin-top: 1.3rem;
+}	
 
-/*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
+.socialMedia button a {
+     background: none;
+}
 
+.navImg {
+     height: 4rem;
+     display: inline;
+}
 
-/*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
+.navImgSmall {
+     display: none;
+}
 
+.socialMedia {
+     margin: 1rem 1rem; 
+}
+
+.linkSocialBlock {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     vertical-align: middle;
+}
+
+/* HEADER */
 .header {
      background: #ffffff;
-     width: 100%;
      position: fixed;
 	top: 0;
 	clear:both;
 	z-index:1;
 	height: 4rem;
      display: block;
-     min-height: 4rem
+     min-height: 4rem;
+	width: 100%;
+     min-width: 100vw;
 }
 
 .logo {
      display: inline-block;
-}
-
-.logo a {
-     /* font-size: 40px;
-     font-weight: bold;
-     text-transform: uppercase;
-     color: #fff;
-     line-height: 40px; */
 }
 
 .frikanomicsLogoBlock {
@@ -351,7 +216,7 @@ button {
      margin: auto;
 }
 
-.frikanomicsLogo{
+.frikanomicsLogo {
      width: 30vw;
      margin: 5rem 0 0;
 }
@@ -362,350 +227,21 @@ button {
      background-repeat: no-repeat;
 }
 
-.text-bg h1 {
-     color: #fff;
-     font-size: 60px;
-     line-height: 80px;
-     padding-bottom: 25px;
-     font-weight: bold;
+.howToBuyLink {
+	padding: 0 0 2rem 0;
+	color: #FFFFFF;
+     max-width: 31vw;
+     margin: auto;
 }
 
-.text-bg span {
-     color: #FF9E14;
-     font-size: 40px;
-     line-height: 35px;
-     font-weight: bold;
-}
-
-.text-bg p {
-     color: #fff;
-     font-size: 17px;
-     line-height: 28px;
-     padding: 40px 0;
-}
-
-.text-bg a {
-     font-size: 16px;
-     background-color: #fff;
-     color: #000;
-     padding: 10px 0px;
-     width: 100%;
-     max-width: 190px;
-     text-align: center;
-     display: inline-block;
-     text-transform: uppercase;
-}
-
-.text-bg a:hover {
-     background-color: #FF9E14;
-     color: #fff;
-}
-
-.text-img figure {
-     margin: 0px;
-}
-
-.text-img figure img {
-     width: 100%;
-}
-
-.titlepage {
-     text-align: center;
-     padding-bottom: 60px;
-}
-
-.titlepage h2 {
-     font-size: 45px;
-     color: #0c0f38;
-     line-height: 40px;
-     font-weight: bold;
-     padding: 0;
-}
-
-
-/** Hosting section **/
-
-.hosting {
-     padding-top: 90px;
-}
-
-.web_hosting {
-     text-align: center;
-}
-
-.web_hosting figure {
-     margin: 0;
-}
-
-.web_hosting p {
-     color: #0c0f38;
-     font-size: 17px;
-     line-height: 28px;
-     padding: 40px 50px;
-}
-
-.web_hosting a {
-     font-size: 16px;
-     background-color: #000;
-     color: #fff;
-     padding: 10px 0px;
-     width: 100%;
-     max-width: 190px;
-     text-align: center;
-     display: inline-block;
-     text-transform: uppercase;
-     font-weight: 400;
-     margin-top: 10px;
-}
-
-.web_hosting a:hover {
-     background-color: #FF9E14;
-     color: #fff;
-}
-
-
-/** end Hosting section **/
-
-
-/** Services section **/
-
-.Services {
-     margin-top: 90px;
-     padding: 60px 0;
-     background: #271705;
-     font-family: Poppins;
-}
-
-.Services .titlepage {
-     text-align: center;
-}
-
-.Services .titlepage h2 {
-     color: #fff;
-     padding-bottom: 20px;
-}
-
-.Services .titlepage p {
-     color: #fff;
-}
-
-.Services .Services-box i {
-     background: #fff;
-     width: 100px;
-     height: 100px;
-     border-radius: 50px;
-     display: inline-block;
-     padding-top: 19px;
-}
-
-.Services .Services-box i:hover {
-     background: #ddd;
-}
-
-.Services .Services-box h3 {
-     padding: 20px 0px 20px 0px;
-     font-size: 20px;
-     line-height: 25px;
-     color: #fff;
-     display: block;
-     font-weight: 500;
-}
-
-.Services .Services-box {
-     text-align: center;
-     background-color: transparent;
-     border-radius: 20px;
-     border: #cecfd7 solid 2px;
-     padding: 40px;
-     transition: ease-in all 0.5s;
-     margin-bottom: 30px;
-}
-
-.Services .Services-box:hover {
-     background: #FF9E14;
-     transition: ease-in all 0.5s;
-     cursor: pointer;
-}
-
-.Services .Services-box p {
-     font-size: 16px;
-     line-height: 24px;
-     color: #fff;
-}
-
-.read_more {
-     font-size: 16px;
-     background-color: #fff;
-     color: #000;
-     padding: 10px 0px;
-     width: 100%;
-     max-width: 190px;
-     display: flex;
-     justify-content: center;
-     text-align: center;
-     margin: 0 auto;
-     margin-top: 20px;
-     border-radius: 5px;
-}
-
-.read_more:hover {
-     background: #FF9E14;
-     color: #fff;
-}
-
-
-/** end Services section **/
-
-
-/** why section **/
-
-.why {
-     margin-top: 90px;
-     background: #ffff;
-     font-family: Poppins;
-}
-
-.why .titlepage {
-     text-align: center;
-}
-
-.why .titlepage h2 {
-     padding-bottom: 20px;
-}
-
-.why .titlepage p {
-     color: #090808;
-}
-
-.why .why-box h3 {
-     padding: 20px 0px 20px 0px;
-     font-size: 20px;
-     line-height: 25px;
-     color: #090808;
-     display: block;
-     font-weight: 500;
-}
-
-.why .why-box {
-     text-align: center;
-     background-color: transparent;
-     border-radius: 20px;
-     padding: 40px 20px 20px 20px;
-     transition: ease-in all 0.5s;
-     margin-bottom: 30px;
-     box-shadow: #ddd 0px 0px 10px
-}
-
-.why .why-box p {
-     font-size: 16px;
-     line-height: 24px;
-     color: #090808;
-}
-
-.why .why-box:hover {
-     transition: ease-in all 0.1s;
-     transform: scale(1.1);
-}
-
-.bg {
-     font-size: 16px;
-     background-color: #090808;
-     color: #fff;
-     padding: 10px 0px;
-     width: 100%;
-     max-width: 190px;
-     display: flex;
-     justify-content: center;
-     text-align: center;
-     margin: 0 auto;
-     margin-top: 20px;
-     border-radius: 5px;
-}
-
-.bg:hover {
-     background: #FF9E14;
-     color: #fff;
-}
-
-
-/** end why section **/
-
-
-/** contact section **/
-
-.contact {
-     padding-top: 90px;
-     font-family: Poppins;
-}
-
-.main_form {
-     background: #271705;
-     padding: 55px 55px;
-     border-radius: 30px;
-     margin-bottom: -58%;
-}
-
-.contact .main_form .contactus {
-     border: #fff solid 1px;
-     padding: 0px 19px;
-     margin-bottom: 20px;
-     border-radius: 15px;
-     width: 100%;
-     height: 52px;
-     background: #fff;
-     color: #999999;
-     font-size: 16px;
-}
-
-.contact .main_form .textarea {
-     margin-bottom: 25px;
-     padding: 0px 19px;
-     color: #999999 !important;
-     width: 100%;
-     border: #fff solid 1px;
-     border-radius: 15px;
-     padding-top: 38px;
-     background: #fff;
-}
-
-.contact .main_form .send {
-     font-size: 16px;
-     transition: ease-in all 0.5s;
-     background-color: #fff;
-     color: #ef4259;
-     padding: 12px 70px;
-     margin: 0 auto;
-     display: block;
-     border-radius: 30px;
-}
-
-.contact .main_form .send:hover {
-     background-color: #FF9E14;
-     transition: ease-in all 0.5s;
-     color: #fff;
-}
-
-#contact *::placeholder {
-     color: #999999;
-     opacity: 1;
-}
-
-.current {
-     color: #fff;
-     margin-top: -4px;
-     position: absolute;
-}
-
-
-/** Hoe te kopen **/
+/* HOE TE KOPEN  */
 #HoeTeKopen {
      margin: 10rem 0 0 0;
 }
 
-/** footer **/
+/* FOOTER */
 
 .footer {
-     font-family: Poppins;
      background: #ffffff;
      margin: auto;
      width: 100%;
@@ -713,16 +249,16 @@ button {
 }
 
 .footer p{
-     font-weight: medium;
+     font-weight: bold;
      font-size: 1rem;
-     padding: 2rem 0 0 0;
+     padding: 1rem 0 0 0;
+     color: #271705;
+
 }
 
 .socialMediaBlockFooter{
-     display: flex;
      flex-direction: row;
-     width: 20vw;
-     margin: auto;
+     width: inherit;
 }
 
 .socialMediaBlockFooter button {
@@ -735,107 +271,12 @@ button {
      width: 2rem;
 }
 
-.cont {
-     text-align: center;
-     margin-top: 31%;
-}
-
-.cont h3 {
-     color: #fff;
-     font-size: 45px;
-     line-height: 30px;
-     font-weight: bold;
-     padding: 30px 0px 0px 0px;
-}
-
-.cont span {
-     color: #fff;
-     font-size: 30px;
-     line-height: 30px;
-     padding: 30px 0px 30px 0px;
-     display: inline-block;
-     font-weight: bold;
-}
-
-.cont p {
-     color: #fff;
-     font-size: 17px;
-     line-height: 30px;
-     padding: 0 130px;
-     padding-bottom: 60px;
-}
-
-.copyright {
-     padding: 20px 0px;
-     background: #fff;
-}
-
-.copyright p {
-     color: #1e1e1e;
-     font-size: 18px;
-     line-height: 22px;
-     text-align: center;
-}
-
-.copyright a {
-     color: #1e1e1e;
-}
-
-.copyright a:hover {
-     color: #0c0f38;
-}
-
-/** end footer **/
-
-/* Simon style */
-
-.socialMedia {
-     margin-bottom: 2rem; 
-}
-
-.socialMedia button a img {
-     width: 2rem;
-     height: 2rem;
-     margin: auto ;
-}
-
-.socialMedia button {
-     padding-right: 1rem;
-     background: none;
-}
-
-.socialMedia button a {
-     background: none;
-}
-
-.navImg {
-     height: 4rem;
-     display: inline;
-}
-
-/* .frikonomics {
-     max-width: 50vw;
-     margin: auto;
-     text-align: center;
-} */
-
-.container div div p .DonSimon {
-     color: #FF9E14;
-}
-
-.linkSocialBlock {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     vertical-align: middle;
-}
-
-/* Styling text title  */
+/* STYLING TEXT TITLE  */
 .subtitle {
      color: #FF9E14;
      font-weight: bold;
      font-size: 2rem;
-     margin: 5rem 0 0 0;
+     margin: 4rem 0 0 0;
 }
 
 .normalText {
@@ -843,8 +284,16 @@ button {
      font-weight: lighter;
      font-size: 1rem;
 }
+.buttonBlock {
+     display: flex;
+     flex-direction: column;
+	padding: 0rem 0 5rem;
+     max-width: 50%;
+	margin: inherit;
+	
+}
 
-/* Intro */
+/* INTRO */
 
 .buyButton {
      background-color: #FF9E14;
@@ -856,19 +305,20 @@ button {
      margin: 2rem 0 0;
 }
 
-/* Frikonomics */
+/* FRIKONOMICS */
 
 .frikanomicsblock {
      max-width: 50vw;
      margin: auto;
      text-align: center;
+	padding: 0 0 3rem 1rem;
 }
 
 .frikanomicsLogoOrangeBlock {
      display: flex;
      flex-direction: row;
      justify-content: space-around;
-    width: 30vw;
+    width: 20vw;
     margin: auto;
     padding: 5rem 0 0 0;
 }
@@ -880,27 +330,24 @@ button {
 .frikanomicsLogoOrange:nth-last-of-type(1) {
      width: 2rem;
      height: 2rem;
-
 }
 
 .frikanomicsLogoOrange:nth-last-of-type(2) {
      width: 4rem;
      height: 4rem;
-
 }
 
 .frikanomicsLogoOrange:nth-last-of-type(3) {
      width: 6rem;
      height: 6rem;
-
 }
 
-/* Infoblock  */
-
+/* INFOBLOCK  */
 .infoBlockFrik {
-     max-width: 50vw;
-     margin: 5rem auto;
+     max-width: 100%;
+     margin: 0 auto;
      text-align: center;
+	 padding: 2rem;
 }
 
 .infoBlockTitle {
@@ -926,7 +373,7 @@ button {
      margin: 1rem auto;
 }
 
-/* Roadmap  */
+/* ROADMAP  */
 #Roadmap {
      background-color: #ffffff;
      max-width: 100vw;
@@ -939,10 +386,9 @@ button {
      width: 50vw;
 }
 
-/* Textblokken */
-
+/* TEXTBLOKKEN */
 .textBlock {
-     margin: 5rem 0;
+     margin: 3rem 0;
      align-items: flex-start;
      text-align: start;
 }
@@ -957,28 +403,230 @@ button {
      font-weight: bold;
      color: #FF9E14;
      font-size: 1rem;
+     line-height: normal
+}
 
+.textBlockTextLink {
+     font-weight: bold;
+     color: #ffffff;
+     font-size: 1rem;
+     text-decoration: underline;
 }
 
 /* MEDIA QUERIES */
-/* Telefoon */
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1200px)  {
+     .EnglishButton {
+          display: none;
+     }
+
+     .frikanomicsLogoBlock {
+          max-width: 40vw;
+     }
+
+     .frikanomicsLogo {
+          width: 40vw;
+          margin: 5rem auto;
+     }
+
+     .buttonBlock {
+          max-width: 55%;
+     }
+
+     .frikanomicsblock {
+          max-width: 60vw;
+     }
+
+     .roadmapImage {
+          width: 70vw;
+     }
+
+     .textBlockTitle {
+          font-size: 1.2rem;   
+     }
+}
+
+@media screen and (max-width: 800px) {
+     .navbar-nav {
+          margin: 0 1rem;
+     }
+
+     .frikanomicsLogoBlock {
+          max-width: 50vw;
+     }
+ 
+     .frikanomicsLogo {
+          width: 50vw;
+          margin: 5rem auto;
+     }
+
      .infoBlockAmount {
           font-size: 1rem;
-          max-width: 100vw;
+     }
+	 
+     .socialMedia {
+	     display: none	 
+	}	 
+
+     .roadmapImage {
+          width: 90vw;
+     }
+
+     .textBlockTitle {
+          font-size: 1rem;   
+     }
+
+     .howToBuyLink {
+          max-width: 40vw;
+     }
+
+}
+
+@media screen and (max-width: 600px) {
+     .navImg {
+          display: none;
+     }
+
+     .navImgSmall {
+          display: block;
+          width: 3rem;
+          margin: 0.5rem 1rem;
+     }
+     .navigation.navbar-dark .navbar-nav .nav-link {
+          padding: 0.5em;
+          font-size: 0.9rem;
+     }
+
+    .frikanomicsLogoBlock {
+         max-width: 60vw;
+    }
+
+    .frikanomicsLogo {
+          width: 60vw;
+          margin: 5rem auto;
+    }
+
+    .frikanomicsblock {
+         max-width: 80vw;
+    }
+
+    .infoBlockAmount {
+         max-width: 50vw;
+    }
+
+    .roadmapImage {
+         width: 95%;;
+    }
+
+    .howToBuyLink {
+         max-width: 50vw;
+    }
+
+    .socialMediaBlockFooter button a img {
+         width: 1.5rem;
+         height: 1.5rem;
+    }
+
+    .frikanomicsLogoOrange:nth-last-of-type(1) {
+     width: 2rem;
+     height: 2rem;
+}
+
+     .frikanomicsLogoOrange:nth-last-of-type(2) {
+          width: 3.5rem;
+          height: 3.5rem;
+     }
+
+     .frikanomicsLogoOrange:nth-last-of-type(3) {
+          width: 5rem;
+          height: 5rem;
+     }
+
+}
+
+@media screen and (max-width: 480px) {
+     .subtitle {
+          margin: 0;
+     }
+	 .infoBlockAmount {
+          font-size: 1rem;
+          max-width: 100%;  
+     }
+
+     .buttonBlock {
+          max-width: 70%;
+     }
+
+	 .buyButton {
+            padding: 0.5rem ;
+	 }
+
+	 .navImg {
+	     display: none;
+	 }
+
+      .howToBuyLink {
+          max-width: 70vw;
      }
 }
 
-/* Tablet */
-@media screen and (max-width: 800px) {
-     body {
-          background-color: #FF9E14;
+
+@media screen and (max-width: 375px) {
+     .navbar-nav {
+          min-width: 100vw;
+          margin: auto;
      }
+
+     .navImgSmall {
+         display: none;
+     }
+
+     .subtitle {
+          font-size: 1.5rem;
+
+     }
+     
+     .frikanomicsLogoOrange:nth-last-of-type(1) {
+          width: 2rem;
+          height: 2rem;
+     }
+     
+     .frikanomicsLogoOrange:nth-last-of-type(2) {
+          width: 3rem;
+          height: 3rem;
+     }
+     
+     .frikanomicsLogoOrange:nth-last-of-type(3) {
+          width: 4rem;
+          height: 4rem;
+     }
+     
+     .frikanomicsblock {
+          padding: 0;
+     }
+
+     .textBlockText {
+          font-size: 0.8rem;
+          line-height: normal;
+     }
+
+     .socialMediaBlockFooter button {
+          margin: 0.5rem;
+     }
+	 /* .buyButton {
+		  margin: 1rem -3rem 0;
+	 }
+	 
+	 .infoBlockAmount {
+          font-size: 1rem;
+          max-width: 100%;
+		  
+     } */
+	
 }
 
-/* Desktop */
-@media screen and (max-width: 1000px) {
-     body {
-          background-color: #FF9E14;
-     }
-}
+
+
+
+
+
